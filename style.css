@@ -16,3 +16,12 @@ WP Bootstrap 4 is based on Underscores https://underscores.me/, (C) 2018-2019 Au
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

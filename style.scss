@@ -16,60 +16,70 @@ WP Bootstrap 4 is based on Underscores https://underscores.me/, (C) 2018-2019 Au
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 
-.home-page {
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.home-page * {
+  color: rgba(255, 255, 255, .5);
+}
+
+.home-1:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .5);
+  .invisible {
+    visibility: visible !important;
+  }
   * {
-    color: #797979;
+    color: #fff !important;
   }
-  .menu {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    bottom: 0;
+  .widget-title:after {
+    background-color: #fff !important;
   }
-  .carousel-item {
-    height: 100vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+}
 
-  .home-1:hover {
-    * {
-      color: #fff !important;
-    }
-    .widget-title:after {
-      background-color: #fff !important;
-    }
+.home-2:hover {
+  background-color: rgba(0, 0, 0, .5);
+  .invisible {
+    visibility: visible !important;
   }
-
-  .home-2:hover {
-    * {
-      color: #fff !important;
-    }
-    .widget-title:after {
-      background-color: #fff !important;
-    }
+  * {
+    color: #fff !important;
   }
-
-  .home-3:hover {
-    * {
-      color: #fff !important;
-    }
-    .widget-title:after {
-      background-color: #fff !important;
-    }
+  .widget-title:after {
+    background-color: #fff !important;
   }
+}
 
-  .home-4:hover {
-    * {
-      color: #fff !important;
-    }
-    .widget-title:after {
-      background-color: #fff !important;
-    }
+.home-3:hover {
+  background-color: rgba(0, 0, 0, .5);
+  .invisible {
+    visibility: visible !important;
+  }
+  * {
+    color: #fff !important;
+  }
+  .widget-title:after {
+    background-color: #fff !important;
+  }
+}
+
+.home-4:hover {
+  background-color: rgba(0, 0, 0, .5);
+  .invisible {
+    visibility: visible !important;
+  }
+  * {
+    color: #fff !important;
+  }
+  .widget-title:after {
+    background-color: #fff !important;
   }
 }
 
@@ -77,10 +87,19 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   content: "";
   height: 3px;
   width: 50%;
-  background-color: #797979;
+  background-color: rgba(255, 255, 255, .5);
   position: absolute;
   top: 40px;
   right: 0;
+}
+
+.left-sidebar {
+  background-color: rgba(0, 0, 0, .5);
+  width: 280px;
+}
+
+.b-0 {
+  bottom: 0;
 }
 
 .b-100 {

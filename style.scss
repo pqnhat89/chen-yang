@@ -16,18 +16,64 @@ WP Bootstrap 4 is based on Underscores https://underscores.me/, (C) 2018-2019 Au
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 
-.carousel-item {
-  height: 100vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+@for $i from 1 through 100 {
+  .uk-width-#{$i} {
+    width: #{$i}% !important;
+  }
+  .uk-height-#{$i} {
+    height: #{$i}% !important;
+  }
 }
 
-.home-page * {
-  color: rgba(255, 255, 255, .5);
+@for $i from 1 through 1000 {
+  .uk-width-#{$i}px {
+    width: #{$i}px !important;
+  }
+  .uk-height-#{$i}px {
+    height: #{$i}px !important;
+  }
+  //.uk-margin-#{$i}px {
+  //  margin: #{$i}px !important;
+  //}
+  //.uk-padding-#{$i}px {
+  //  padding: #{$i}px !important;
+  //}
+}
+
+a, a * {
+  color: rgba(255, 255, 255, .5) !important;
+}
+
+a:hover, a:hover * {
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.current-menu-item > a {
+  color: #fff !important;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.home-page {
+  * {
+    color: rgba(255, 255, 255, .5);
+  }
+  .widget-title {
+    position: relative;
+    text-align: right;
+  }
+  .logo {
+    top: 20%;
+    width: 140px;
+  }
+}
+
+.home-1, .home-2, .home-3, .home-4 {
+  padding-top: 100%;
+  margin-bottom: -1.8%;
 }
 
 .home-1:hover {
@@ -45,6 +91,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 .home-2:hover {
+  cursor: pointer;
   background-color: rgba(0, 0, 0, .5);
   .invisible {
     visibility: visible !important;
@@ -58,6 +105,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 .home-3:hover {
+  cursor: pointer;
   background-color: rgba(0, 0, 0, .5);
   .invisible {
     visibility: visible !important;
@@ -71,6 +119,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 .home-4:hover {
+  cursor: pointer;
   background-color: rgba(0, 0, 0, .5);
   .invisible {
     visibility: visible !important;
@@ -83,25 +132,57 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   }
 }
 
+.menu, .sub-menu {
+  list-style: none;
+  li {
+    padding-top: 5px;
+  }
+}
+
 .widget-title:after {
   content: "";
   height: 3px;
   width: 50%;
   background-color: rgba(255, 255, 255, .5);
   position: absolute;
-  top: 40px;
-  right: 0;
+  top: 45px;
+  right: 5px;
 }
 
-.left-sidebar {
-  background-color: rgba(0, 0, 0, .5);
-  width: 280px;
+.uk-panel-scrollable {
+  border: none;
+  text-align: justify;
 }
 
-.b-0 {
-  bottom: 0;
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
 }
 
-.b-100 {
-  bottom: 100px;
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, .3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, .5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, .8);
+}
+
+.uk-overlay-primary {
+  background: rgba(0, 0, 0, .3) !important;
+}
+
+.post-image img {
+  height: 50px !important;
+  width: 300px !important;
+}
+
+.uk-thumbnav-vertical > * {
+  padding-top: 3px !important;
 }

@@ -1,0 +1,7 @@
+.menu-widget {
+    display: none;
+}
+
+.offcanvas-btn {
+    display: flex !important;
+}

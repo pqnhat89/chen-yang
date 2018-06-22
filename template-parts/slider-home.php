@@ -1,4 +1,4 @@
-<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="autoplay: true; animation: fade;">
+<div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow="autoplay: false; animation: fade;">
     <ul class="uk-slideshow-items" uk-height-viewport="height: 100%">
         <li>
             <img src="<?=  ot_get_option('slide_1') != null ? ot_get_option('slide_1') : get_template_directory_uri() . '/assets/images/slide-1.jpg' ?>"

@@ -20,4 +20,9 @@ $(document).ready(function () {
     $('#concept').click(function () {
         $('#concept-content').toggleClass('uk-hidden');
     });
+
+    $('#offcanvas-btn').click(function () {
+        $('#offcanvas-content').toggleClass('uk-hidden');
+        $('.menu ul').show();
+    });
 });

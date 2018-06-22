@@ -11,10 +11,11 @@
             </li>
         <?php endforeach; ?>
     </ul>
-    <div class="uk-overlay uk-overlay-primary uk-position-right uk-width-300px uk-hidden" id="concept-content" style="margin-right: 100px">
-        h jhk hjk hkj hkj hk jh khk jh jkh jk hkj hkj hkj hkj hkj
+    <div class="uk-overlay uk-overlay-primary uk-position-right uk-animation-slide-right uk-width-300px uk-margin-right-100 uk-hidden"
+         id="concept-content">
+        <?= the_content() ?>
     </div>
-    <div class="uk-overlay uk-overlay-primary uk-position-right uk-width-100px">
+    <div class="uk-overlay uk-overlay-primary uk-position-right uk-animation-slide-right uk-width-100px">
         <div class="uk-position-center-right uk-position-small">
             <ul class="uk-thumbnav uk-thumbnav-vertical">
                 <?php foreach ($images as $k => $image): ?>
@@ -26,7 +27,7 @@
                 <?php endforeach; ?>
             </ul>
         </div>
-        <div class="uk-position-bottom-right uk-position-small">
+        <div class="uk-position-bottom-right uk-position-small uk-padding-bottom-10">
             <a id="concept">CONCEPT</a>
         </div>
     </div>

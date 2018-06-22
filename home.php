@@ -6,10 +6,12 @@
                 <div class="uk-position-bottom-center uk-position-small uk-text-center">
                     <div class="uk-grid uk-text-center">
                         <?php for ($i = 1; $i <= 4; $i++): ?>
-                            <div class="uk-padding <?php echo 'home-' . $i ?>">
+                            <div class="uk-padding <?=  'home-' . $i ?>">
                                 <?php if ($i == 1): ?>
-                                    <img src="<?php echo ot_get_option('logo') != null ? ot_get_option('logo') : get_template_directory_uri() . '/assets/images/logo.jpg' ?>"
-                                         alt="" class="logo uk-position-top-left">
+                                    <a href="/">
+                                        <img src="<?=  ot_get_option('logo') != null ? ot_get_option('logo') : get_template_directory_uri() . '/assets/images/logo.jpg' ?>"
+                                             alt="" class="logo uk-position-top-left">
+                                    </a>
                                 <?php endif; ?>
                                 <?php dynamic_sidebar('home-' . $i); ?>
                             </div>

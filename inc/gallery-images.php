@@ -58,7 +58,7 @@ class Gallery_images
             </ul>
 
             <input type="hidden" id="product_image_gallery" name="product_image_gallery"
-                   value="<?php echo esc_attr($product_image_gallery); ?>"/>
+                   value="<?=  esc_attr($product_image_gallery); ?>"/>
 
         </div>
         <p class="add_product_images hide-if-no-js">

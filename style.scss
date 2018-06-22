@@ -16,12 +16,62 @@ WP Bootstrap 4 is based on Underscores https://underscores.me/, (C) 2018-2019 Au
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 
+html {
+  font-size: 14px;
+}
+
+@for $i from 1 through 4 {
+  .home-#{$i}:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+    ul {
+      visibility: visible;
+    }
+    .invisible {
+      visibility: visible !important;
+    }
+    * {
+      color: #fff !important;
+    }
+    .widget-title:after {
+      background-color: #fff !important;
+    }
+  }
+}
+
 @for $i from 1 through 100 {
   .uk-width-#{$i} {
     width: #{$i}% !important;
   }
   .uk-height-#{$i} {
     height: #{$i}% !important;
+  }
+  .uk-text-#{$i} {
+    font-size: #{$i}px !important;
+  }
+  .uk-margin-top-#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  .uk-margin-bottom-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  .uk-margin-left-#{$i} {
+    margin-left: #{$i}px !important;
+  }
+  .uk-margin-right-#{$i} {
+    margin-right: #{$i}px !important;
+  }
+  .uk-padding-top-#{$i} {
+    padding-top: #{$i}px !important;
+  }
+  .uk-padding-bottom-#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+  .uk-padding-left-#{$i} {
+    padding-left: #{$i}px !important;
+  }
+  .uk-padding-right-#{$i} {
+    padding-right: #{$i}px !important;
   }
 }
 
@@ -32,12 +82,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   .uk-height-#{$i}px {
     height: #{$i}px !important;
   }
-  //.uk-margin-#{$i}px {
-  //  margin: #{$i}px !important;
-  //}
-  //.uk-padding-#{$i}px {
-  //  padding: #{$i}px !important;
-  //}
 }
 
 a, a * {
@@ -72,64 +116,11 @@ a:hover, a:hover * {
 }
 
 .home-1, .home-2, .home-3, .home-4 {
+  ul {
+    visibility: hidden;
+  }
   padding-top: 100%;
   margin-bottom: -1.8%;
-}
-
-.home-1:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, .5);
-  .invisible {
-    visibility: visible !important;
-  }
-  * {
-    color: #fff !important;
-  }
-  .widget-title:after {
-    background-color: #fff !important;
-  }
-}
-
-.home-2:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, .5);
-  .invisible {
-    visibility: visible !important;
-  }
-  * {
-    color: #fff !important;
-  }
-  .widget-title:after {
-    background-color: #fff !important;
-  }
-}
-
-.home-3:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, .5);
-  .invisible {
-    visibility: visible !important;
-  }
-  * {
-    color: #fff !important;
-  }
-  .widget-title:after {
-    background-color: #fff !important;
-  }
-}
-
-.home-4:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, .5);
-  .invisible {
-    visibility: visible !important;
-  }
-  * {
-    color: #fff !important;
-  }
-  .widget-title:after {
-    background-color: #fff !important;
-  }
 }
 
 .menu, .sub-menu {
@@ -137,6 +128,10 @@ a:hover, a:hover * {
   li {
     padding-top: 5px;
   }
+}
+
+.menu {
+  padding: 0;
 }
 
 .widget-title:after {
@@ -172,6 +167,10 @@ a:hover, a:hover * {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, .8);
+}
+
+.single.single-post #menu-item-60 ul {
+  display: block !important;
 }
 
 .uk-overlay-primary {

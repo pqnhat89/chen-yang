@@ -16,7 +16,7 @@ $(document).ready(function () {
     $('.uk-panel-scrollable').scroller();
 
     $('.current-menu-item').closest('ul').show();
-    
+
     $('#concept').click(function () {
         $('#concept-content').toggleClass('uk-hidden');
     });

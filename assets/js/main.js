@@ -4,7 +4,7 @@ $(document).ready(function () {
         window.location.href = "/about-us/firm-profile";
     });
     $('.home-2').click(function () {
-        window.location.href = "/project";
+        window.location.href = "/chuyen-muc/residential-space";
     });
     $('.home-3').click(function () {
         window.location.href = "/press";

@@ -17,7 +17,7 @@
     </div>
     <div class="uk-overlay uk-overlay-primary uk-position-right uk-animation-slide-right uk-width-100px">
         <div class="uk-position-center-right uk-position-small">
-            <ul class="uk-thumbnav uk-thumbnav-vertical">
+            <ul class="uk-thumbnav uk-thumbnav-vertical ">
                 <?php foreach ($images as $k => $image): ?>
                     <li uk-slideshow-item="<?= $k ?>">
                         <a href="#">
@@ -27,7 +27,10 @@
                 <?php endforeach; ?>
             </ul>
         </div>
-        <div class="uk-position-bottom-right uk-position-small uk-padding-bottom-10">
+        <div class="uk-position-top-center uk-position-small uk-padding-top-10">
+            <?= strtoupper(get_the_title()) ?>
+        </div>
+        <div class="uk-position-bottom-center uk-position-small uk-padding-bottom-10">
             <a id="concept">CONCEPT</a>
         </div>
     </div>

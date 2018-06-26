@@ -1,4 +1,4 @@
-<div class="uk-overlay uk-overlay-primary uk-position-right uk-width-300px">
+<div class="uk-overlay uk-overlay-primary uk-position-right uk-animation-slide-right uk-width-300px">
     <h3><?= single_cat_title(); ?></h3>
     <div class="uk-panel uk-panel-scrollable uk-height-93">
         <div class="uk-position-top-center uk-position-small">

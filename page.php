@@ -3,7 +3,6 @@
         <div id="primary" class="content-area">
             <main id="main" class="site-main" role="main">
                 <?php get_template_part('template-parts/slider', 'home'); ?>
-                <?php get_template_part('template-parts/sidebar', 'left'); ?>
                 <?php get_template_part('template-parts/page-sidebar', 'right'); ?>
             </main><!-- #main -->
         </div><!-- #primary -->

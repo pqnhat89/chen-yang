@@ -27,7 +27,7 @@
                 <?php endforeach; ?>
             </ul>
         </div>
-        <div class="uk-position-top-center uk-position-small uk-padding-top-10">
+        <div class="uk-position-top-center uk-position-small uk-padding-top-30">
             <?= strtoupper(get_the_title()) ?>
         </div>
         <div class="uk-position-bottom-center uk-position-small uk-padding-bottom-10">
